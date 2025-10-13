@@ -1,6 +1,7 @@
-import test from 'ava';
+import test from 'node:test';
+import assert from 'node:assert/strict';
 import {sayHello} from './sample.js';
 
-test('should say hello to given string', t => {
-	t.is(sayHello('World'), 'Hello World!');
+void test('should say hello to given string', () => {
+	assert.equal(sayHello('World'), 'Hello World!');
 });
