@@ -1,6 +1,7 @@
 {
 	"extends": "@sindresorhus/tsconfig",
 	"compilerOptions": {
-		"noEmit": true
+		"noEmit": true,
+		"rewriteRelativeImportExtensions": true
 	}
 }
