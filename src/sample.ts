@@ -1,3 +1,3 @@
-export function sayHello(name: string): `Hello ${string}!` {
+export function sayHello<T extends string>(name: T): `Hello ${T}!` {
 	return `Hello ${name}!`;
 }
