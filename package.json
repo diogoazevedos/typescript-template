@@ -3,11 +3,11 @@
 	"type": "module",
 	"scripts": {
 		"prepare": "husky",
-		"bundle": "esbuild --bundle --minify --sourcemap --format=esm --platform=node --target=node24.11 --outdir=target/build",
+		"bundle": "esbuild --bundle --minify --sourcemap --format=esm --platform=node --target=node24.13 --outdir=target/build",
 		"test": "xo && tsc && c8 node --test"
 	},
 	"engines": {
-		"node": ">=24.11"
+		"node": ">=24.13"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "20.3.1",
